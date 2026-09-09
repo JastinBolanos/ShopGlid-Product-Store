@@ -124,6 +124,7 @@ export const CartPage: React.FC = () => {
                 <img
                   src={item.product.imageUrl}
                   alt={item.product.name}
+                  referrerPolicy="no-referrer"
                   className="w-20 h-20 object-cover rounded-xl bg-stone-100 shrink-0 border border-stone-100"
                 />
 

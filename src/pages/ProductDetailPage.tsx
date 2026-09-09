@@ -57,6 +57,7 @@ export const ProductDetailPage: React.FC = () => {
               <img
                 src={product.imageUrl}
                 alt={product.name}
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -182,6 +183,7 @@ export const ProductDetailPage: React.FC = () => {
                 <img
                   src={related.imageUrl}
                   alt={related.name}
+                  referrerPolicy="no-referrer"
                   className="w-16 h-16 object-cover rounded-lg bg-stone-100 shrink-0"
                 />
                 <div className="min-w-0">

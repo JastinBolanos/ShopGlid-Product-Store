@@ -18,8 +18,7 @@ export const PRODUCTS: Product[] = [
       'Forro en algodón crudo natural transpirable',
       'Dimensiones: 38 cm (ancho) x 32 cm (alto) x 14 cm (base)',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/cartera-tote-atelier.jpg',
     colors: [
       { name: 'Borgoña Intenso', hex: '#631f28' },
       { name: 'Negro Azabache', hex: '#1c1917' },
@@ -157,8 +156,7 @@ export const PRODUCTS: Product[] = [
       'Bolsillo de seguridad invisible para pasaporte o cartera',
       'Dimensiones exteriores: 42 cm x 30 cm x 11 cm',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/morral-ejecutivo-slim.jpg',
     colors: [
       { name: 'Negro Carbón', hex: '#1c1917' },
       { name: 'Gris Plomo', hex: '#334155' },
@@ -202,8 +200,7 @@ export const PRODUCTS: Product[] = [
       'Bolsillo superior de acceso rápido para auriculares y llaves',
       'Capacidad compacta de 14 litros',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/morral-compacto-matte.jpg',
     colors: [
       { name: 'Camel Claro', hex: '#b45309' },
       { name: 'Negro Mate', hex: '#1c1917' },
@@ -224,8 +221,7 @@ export const PRODUCTS: Product[] = [
       'Franja reflectante sutil para visibilidad nocturna',
       'Dimensiones: 44 cm x 31 cm x 13 cm',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/morral-city-pack.jpg',
     colors: [
       { name: 'Negro Obsidiana', hex: '#0f172a' },
       { name: 'Gris Marengo', hex: '#475569' },
@@ -249,8 +245,7 @@ export const PRODUCTS: Product[] = [
       '6 ranuras para tarjetas + compartimento central para billetes',
       'Costuras reforzadas al tono con hilo alemán de alta resistencia',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/cartera-slim-esencial.jpg',
     colors: [
       { name: 'Negro Carbón', hex: '#1c1917' },
       { name: 'Cuero Habana', hex: '#78350f' },
@@ -272,8 +267,7 @@ export const PRODUCTS: Product[] = [
       'Forro textil suave que previene la desmagnetización de bandas',
       'Bordes pulidos a la cera de abeja natural',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/billetera-bifold-clasica.jpg',
     colors: [
       { name: 'Marrón Cognac', hex: '#9a3412' },
       { name: 'Negro Clásico', hex: '#1c1917' },
@@ -295,8 +289,7 @@ export const PRODUCTS: Product[] = [
       'Protección perimetral con bloqueo RFID contra clonaciones',
       'Cuero de tacto sedoso agradable durante largas esperas',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/billetera-pasaporte-travel.jpg',
     colors: [
       { name: 'Piel Nuez', hex: '#713f12' },
       { name: 'Negro Carbón', hex: '#1c1917' },
@@ -317,8 +310,7 @@ export const PRODUCTS: Product[] = [
       'Compartimento monedero interno con broche plano',
       'Capacidad para hasta 10 tarjetas y documentos de identidad',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1556774687-0e2fdd0116c0?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/billetera-zip-rfid.jpg',
     colors: [
       { name: 'Negro Grafito', hex: '#1f2937' },
       { name: 'Marrón Terracota', hex: '#9a3412' },
@@ -340,8 +332,7 @@ export const PRODUCTS: Product[] = [
       'Funda exterior en cuero vacuno para billetes y 3 tarjetas adicionales',
       'Grosor compacto de solo 14 mm',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/tarjetero-mecanico.jpg',
     colors: [
       { name: 'Titanio & Piel Negra', hex: '#1c1917' },
       { name: 'Bronce & Cuero Caramelo', hex: '#b45309' },
