@@ -7,8 +7,6 @@ import {
   ShieldCheck,
   Feather,
   Layers,
-  Volume2,
-  VolumeX,
   Compass,
   Check,
   ChevronRight,
@@ -163,7 +161,7 @@ export const WelcomePage: React.FC = () => {
   const navigate = useNavigate();
   const [selectedPillar, setSelectedPillar] = useState<number>(0);
   const [activeTone, setActiveTone] = useState<LeatherTone>(LEATHER_TONES[0]);
-  const [soundEnabled, setSoundEnabled] = useState<boolean>(false);
+  const soundEnabled = true; // Acoustic feedback always active
   const [expandedManifesto, setExpandedManifesto] = useState<number | null>(0);
 
   const handleEnterStore = (category?: string) => {
@@ -235,36 +233,8 @@ export const WelcomePage: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Controls: Sound Toggle & Direct Enter Button */}
+        {/* Right Controls: Direct Enter Button */}
         <div className="flex items-center gap-3">
-          {/* Subtle Acoustic Feedback Toggle */}
-          <button
-            id="welcome-sound-toggle"
-            onClick={() => {
-              const next = !soundEnabled;
-              setSoundEnabled(next);
-              playAcousticFeedback(next, 520);
-            }}
-            className={`px-3 py-1.5 rounded-full text-xs flex items-center gap-1.5 transition-all border ${
-              soundEnabled
-                ? 'bg-stone-800 text-stone-200 border-stone-600'
-                : 'bg-stone-950/60 text-stone-400 border-stone-800 hover:text-stone-300'
-            }`}
-            title={soundEnabled ? 'Silenciar sonidos táctiles' : 'Activar sutil sonido táctil'}
-          >
-            {soundEnabled ? (
-              <>
-                <Volume2 className="w-3.5 h-3.5 text-stone-300" />
-                <span className="hidden sm:inline text-[11px]">Sonido activo</span>
-              </>
-            ) : (
-              <>
-                <VolumeX className="w-3.5 h-3.5 text-stone-500" />
-                <span className="hidden sm:inline text-[11px]">Silencio</span>
-              </>
-            )}
-          </button>
-
           {/* Quick Access to Catalog */}
           <button
             id="welcome-skip-btn"

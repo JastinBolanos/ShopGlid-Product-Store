@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, Search, X, ShoppingBag, User, Sparkles } from 'lucide-react';
+import { Menu, Search, X, ShoppingBag, User } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 interface HeaderProps {
@@ -83,23 +83,8 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
 
-        {/* Right: Welcome Link, Profile Link & Cart Link */}
+        {/* Right: Profile Link & Cart Link */}
         <div className="flex items-center gap-1.5 sm:gap-2.5">
-          {/* Welcome Screen link */}
-          <Link
-            id="nav-welcome-header-btn"
-            to="/welcome"
-            className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
-              location.pathname === '/welcome' || location.pathname === '/'
-                ? 'bg-stone-900 text-white'
-                : 'text-stone-700 hover:text-stone-950 hover:bg-stone-200/60'
-            }`}
-            title="Pantalla de Bienvenida"
-          >
-            <Sparkles className="w-3.5 h-3.5" />
-            <span className="hidden lg:inline">Bienvenida</span>
-          </Link>
-
           {/* User Profile Link: /home/perfil */}
           <Link
             id="nav-profile-header-btn"

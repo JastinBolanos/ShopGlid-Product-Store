@@ -51,12 +51,6 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
 
   const navItems = [
     {
-      to: '/welcome',
-      label: 'Bienvenida & Taller',
-      icon: Sparkles,
-      exact: true,
-    },
-    {
       to: '/home',
       label: 'Catálogo de Productos',
       icon: Home,
