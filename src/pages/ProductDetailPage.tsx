@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Breadcrumbs } from '../components/Breadcrumbs';
-import { INITIAL_PRODUCT } from '../data';
+import { PRODUCTS } from '../data';
 import { useCart } from '../context/CartContext';
 import {
   ShoppingBag,
@@ -15,16 +15,23 @@ import {
 
 export const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const product = INITIAL_PRODUCT; // currently our single featured luxury wallet
+  const product = PRODUCTS.find((p) => p.id === id) || PRODUCTS[0];
   const { addToCart, cartCount } = useCart();
-  const [selectedColor, setSelectedColor] = useState('Negro Carbón');
-  const [justAdded, setJustAdded] = useState(false);
-
-  const colors = [
+  const defaultColors = [
     { name: 'Negro Carbón', hex: '#1c1917' },
     { name: 'Cuero Habana', hex: '#78350f' },
     { name: 'Oliva Minimal', hex: '#3f4f44' },
   ];
+  const colors = product.colors && product.colors.length > 0 ? product.colors : defaultColors;
+  const [selectedColor, setSelectedColor] = useState(colors[0].name);
+  const [justAdded, setJustAdded] = useState(false);
+
+  // Sync selected color if product changes
+  React.useEffect(() => {
+    if (colors && colors.length > 0) {
+      setSelectedColor(colors[0].name);
+    }
+  }, [product.id]);
 
   const handleAdd = () => {
     addToCart(product);
@@ -33,7 +40,7 @@ export const ProductDetailPage: React.FC = () => {
   };
 
   return (
-    <div id="product-detail-view" className="max-w-4xl mx-auto w-full space-y-8 animate-in fade-in duration-300">
+    <div id="product-detail-view" className="max-w-6xl mx-auto w-full space-y-8 animate-in fade-in duration-300">
       {/* Breadcrumbs: Home > Producto > Cartera Slim Esencial */}
       <Breadcrumbs
         items={[
@@ -151,6 +158,45 @@ export const ProductDetailPage: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Related Products from the collection */}
+      <div className="pt-6 space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-base font-semibold text-stone-900">Otras Piezas de la Colección</h2>
+          <Link to="/home" className="text-xs text-stone-600 hover:text-stone-900 font-medium hover:underline">
+            Ver todas las 15 piezas
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {PRODUCTS.filter((p) => p.id !== product.id)
+            .slice(0, 3)
+            .map((related) => (
+              <Link
+                key={related.id}
+                to={`/home/producto/${related.id}`}
+                className="bg-white rounded-xl border border-stone-200 p-3 hover:border-stone-400 transition-all flex items-center gap-3 group shadow-2xs"
+              >
+                <img
+                  src={related.imageUrl}
+                  alt={related.name}
+                  className="w-16 h-16 object-cover rounded-lg bg-stone-100 shrink-0"
+                />
+                <div className="min-w-0">
+                  <p className="text-[10px] uppercase font-semibold text-stone-400">
+                    {related.category}
+                  </p>
+                  <p className="text-xs font-semibold text-stone-900 truncate group-hover:text-stone-700">
+                    {related.name}
+                  </p>
+                  <p className="text-xs font-bold text-stone-900 mt-0.5">
+                    {related.price.toFixed(2)} {related.currency}
+                  </p>
+                </div>
+              </Link>
+            ))}
         </div>
       </div>
     </div>

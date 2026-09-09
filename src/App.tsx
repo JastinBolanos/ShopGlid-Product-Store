@@ -41,7 +41,7 @@ function AppLayout() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-10 flex flex-col">
+      <main className="flex-1 w-full max-w-[1700px] mx-auto px-4 sm:px-8 xl:px-12 py-6 sm:py-10 flex flex-col">
         <Outlet context={{ searchQuery, setSearchQuery }} />
       </main>
 

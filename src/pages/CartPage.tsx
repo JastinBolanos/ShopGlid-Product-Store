@@ -11,6 +11,10 @@ import {
   ShieldCheck,
   CheckCircle2,
   RotateCcw,
+  UserPlus,
+  LogIn,
+  Sparkles,
+  X,
 } from 'lucide-react';
 
 export const CartPage: React.FC = () => {
@@ -25,10 +29,12 @@ export const CartPage: React.FC = () => {
   } = useCart();
 
   const [checkoutComplete, setCheckoutComplete] = useState(false);
+  const [showProximamente, setShowProximamente] = useState(false);
+  const [activeAction, setActiveAction] = useState<string>('Registrarse');
 
-  const handleCheckout = () => {
-    setCheckoutComplete(true);
-    clearCart();
+  const handleTriggerProximamente = (action: string) => {
+    setActiveAction(action);
+    setShowProximamente(true);
   };
 
   if (checkoutComplete) {
@@ -65,7 +71,7 @@ export const CartPage: React.FC = () => {
   }
 
   return (
-    <div id="cart-view" className="max-w-4xl mx-auto w-full space-y-8 animate-in fade-in duration-300">
+    <div id="cart-view" className="max-w-6xl mx-auto w-full space-y-8 animate-in fade-in duration-300">
       {/* Breadcrumbs */}
       <Breadcrumbs items={[{ label: 'Carrito de Compras' }]} />
 
@@ -193,19 +199,82 @@ export const CartPage: React.FC = () => {
               </div>
             </div>
 
-            <button
-              id="btn-confirm-checkout"
-              onClick={handleCheckout}
-              className="w-full py-3 px-4 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-xs font-medium transition-colors flex items-center justify-center gap-2 shadow-xs active:scale-98"
-            >
-              <span>Tramitar Pedido</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            {/* Auth / Register Actions replacing Tramitar Pedido */}
+            <div className="space-y-2 pt-1">
+              <button
+                id="btn-register-checkout"
+                onClick={() => handleTriggerProximamente('Registrarse')}
+                className="w-full py-3 px-4 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-2 shadow-xs active:scale-98"
+                aria-label="Registrarse"
+              >
+                <UserPlus className="w-4 h-4" />
+                <span>Registrarse</span>
+              </button>
+
+              <button
+                id="btn-login-checkout"
+                onClick={() => handleTriggerProximamente('Iniciar sesión')}
+                className="w-full py-2.5 px-4 bg-stone-100 hover:bg-stone-200/80 text-stone-800 rounded-xl text-xs font-medium transition-all flex items-center justify-center gap-2 border border-stone-200/70 active:scale-98"
+                aria-label="Iniciar sesión"
+              >
+                <LogIn className="w-3.5 h-3.5" />
+                <span>Iniciar sesión</span>
+              </button>
+            </div>
 
             <div className="flex items-center justify-center gap-1.5 text-[11px] text-stone-500 pt-1">
               <ShieldCheck className="w-3.5 h-3.5 text-stone-700" />
               <span>Garantía de satisfacción y devolución en 30 días</span>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Proximamente Modal Message */}
+      {showProximamente && (
+        <div
+          id="modal-proximamente-backdrop"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-xs animate-in fade-in duration-200"
+          onClick={() => setShowProximamente(false)}
+        >
+          <div
+            id="modal-proximamente"
+            className="bg-white rounded-3xl max-w-sm w-full p-6 sm:p-8 text-center shadow-2xl border border-stone-200 space-y-5 animate-in zoom-in-95 duration-200 relative"
+            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+          >
+            <button
+              onClick={() => setShowProximamente(false)}
+              className="absolute top-4 right-4 p-1.5 text-stone-400 hover:text-stone-900 rounded-full hover:bg-stone-100 transition-colors"
+              aria-label="Cerrar mensaje"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            <div className="w-14 h-14 rounded-2xl bg-amber-50 border border-amber-200/80 text-amber-800 flex items-center justify-center mx-auto shadow-2xs">
+              <Sparkles className="w-7 h-7 text-amber-600" />
+            </div>
+
+            <div className="space-y-2">
+              <span className="text-[10px] uppercase font-bold tracking-widest text-stone-400">
+                ShopGlid · {activeAction}
+              </span>
+              <h3 className="text-2xl font-bold text-stone-900 tracking-tight">
+                Próximamente
+              </h3>
+              <p className="text-xs text-stone-600 leading-relaxed max-w-xs mx-auto">
+                El módulo de {activeAction.toLowerCase()} y compra en línea se habilitará muy pronto en una próxima actualización.
+              </p>
+            </div>
+
+            <button
+              id="btn-close-proximamente"
+              onClick={() => setShowProximamente(false)}
+              className="w-full py-2.5 px-4 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-xs font-semibold transition-all shadow-xs"
+            >
+              Entendido
+            </button>
           </div>
         </div>
       )}

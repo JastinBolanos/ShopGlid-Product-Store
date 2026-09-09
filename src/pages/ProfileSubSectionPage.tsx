@@ -13,9 +13,9 @@ import {
 } from 'lucide-react';
 
 export const ProfileSubSectionPage: React.FC = () => {
-  const [street, setStreet] = useState('Paseo de la Castellana 88, 4º B');
-  const [city, setCity] = useState('Madrid');
-  const [postalCode, setPostalCode] = useState('28046');
+  const [street, setStreet] = useState('');
+  const [city, setCity] = useState('');
+  const [postalCode, setPostalCode] = useState('');
   const [country, setCountry] = useState('España');
 
   const [ecoPackaging, setEcoPackaging] = useState(true);

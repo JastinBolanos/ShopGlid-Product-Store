@@ -31,7 +31,7 @@ export const Header: React.FC<HeaderProps> = ({
       id="main-header"
       className="sticky top-0 z-30 bg-stone-50/90 backdrop-blur-md border-b border-stone-200"
     >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-3 sm:gap-4">
+      <div className="max-w-[1700px] w-full mx-auto px-4 sm:px-8 xl:px-12 h-18 flex items-center justify-between gap-4 sm:gap-6">
         {/* Left: Button to toggle Sidebar Drawer & Brand Link to /home */}
         <div className="flex items-center gap-2 sm:gap-3">
           <button
@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Center: Search Bar */}
-        <div className="flex-1 max-w-sm sm:max-w-md mx-1 sm:mx-4">
+        <div className="flex-1 max-w-md sm:max-w-xl mx-2 sm:mx-4">
           <div className="relative flex items-center">
             <Search className="w-4 h-4 text-stone-500 absolute left-3.5 pointer-events-none" />
             <input

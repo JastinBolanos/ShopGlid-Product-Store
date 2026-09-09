@@ -1,6 +1,6 @@
 {
   "name": "ShopGlid",
-  "description": "Tienda minimalista de carteras con diseño esencial por ShopGlid.",
+  "description": "Tienda minimalista de marroquinería artesanal, carteras, morrales y billeteras esenciales por ShopGlid.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
