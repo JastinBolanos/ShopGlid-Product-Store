@@ -15,6 +15,7 @@ import { CartProvider } from './context/CartContext';
 import { Header } from './components/Header';
 import { SidebarDrawer } from './components/SidebarDrawer';
 import { HomePage } from './pages/HomePage';
+import { WelcomePage } from './pages/WelcomePage';
 import { ProfilePage } from './pages/ProfilePage';
 import { ProfileSubSectionPage } from './pages/ProfileSubSectionPage';
 import { CartPage } from './pages/CartPage';
@@ -58,11 +59,12 @@ export default function App() {
     <CartProvider>
       <BrowserRouter>
         <Routes>
-          {/* Main Layout containing Header, SidebarDrawer and Footer */}
-          <Route element={<AppLayout />}>
-            {/* Automatic redirection from root '/' to '/home' */}
-            <Route path="/" element={<Navigate to="/home" replace />} />
+          {/* Welcome Screen with immersive interactive experience */}
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/welcome" element={<WelcomePage />} />
 
+          {/* Main Store Layout containing Header, SidebarDrawer and Footer */}
+          <Route element={<AppLayout />}>
             {/* /home routes hierarchy */}
             <Route path="/home" element={<HomePage />} />
 

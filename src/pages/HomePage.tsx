@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react';
-import { useOutletContext } from 'react-router-dom';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { ProductGridCard } from '../components/ProductGridCard';
 import { PRODUCTS } from '../data';
 import { ProductCategory } from '../types';
@@ -12,7 +12,31 @@ interface OutletContextType {
 
 export const HomePage: React.FC = () => {
   const { searchQuery, setSearchQuery } = useOutletContext<OutletContextType>();
-  const [selectedCategory, setSelectedCategory] = useState<ProductCategory>('todos');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialCategory = (searchParams.get('categoria') as ProductCategory) || 'todos';
+  const [selectedCategory, setSelectedCategory] = useState<ProductCategory>(
+    ['todos', 'carteras', 'morrales', 'billeteras'].includes(initialCategory)
+      ? initialCategory
+      : 'todos'
+  );
+
+  // Sync if URL search params change
+  useEffect(() => {
+    const paramCat = searchParams.get('categoria') as ProductCategory;
+    if (paramCat && ['carteras', 'morrales', 'billeteras'].includes(paramCat)) {
+      setSelectedCategory(paramCat);
+    }
+  }, [searchParams]);
+
+  const handleCategoryChange = (catId: ProductCategory) => {
+    setSelectedCategory(catId);
+    if (catId === 'todos') {
+      searchParams.delete('categoria');
+      setSearchParams(searchParams);
+    } else {
+      setSearchParams({ categoria: catId });
+    }
+  };
 
   // Filter products by category and search
   const filteredProducts = useMemo(() => {
@@ -70,7 +94,7 @@ export const HomePage: React.FC = () => {
                 <button
                   key={cat.id}
                   id={`filter-${cat.id}`}
-                  onClick={() => setSelectedCategory(cat.id)}
+                  onClick={() => handleCategoryChange(cat.id)}
                   className={`px-4 py-2 rounded-xl text-xs font-medium whitespace-nowrap transition-all flex items-center gap-2 ${
                     isActive
                       ? 'bg-stone-900 text-white shadow-xs'
@@ -146,7 +170,7 @@ export const HomePage: React.FC = () => {
           <button
             onClick={() => {
               setSearchQuery('');
-              setSelectedCategory('todos');
+              handleCategoryChange('todos');
             }}
             className="inline-flex items-center gap-1.5 px-4 py-2 bg-stone-900 text-white rounded-lg text-xs font-medium hover:bg-stone-800 transition-colors"
           >
