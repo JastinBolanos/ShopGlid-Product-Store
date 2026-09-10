@@ -64,8 +64,7 @@ export const PRODUCTS: Product[] = [
       'Cantos tintados y pulidos manualmente por maestros marroquineros',
       'Dimensiones: 29 cm x 22 cm x 10 cm',
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/cartera-hombro-noir.jpg',
     colors: [
       { name: 'Negro Carbón', hex: '#1c1917' },
       { name: 'Oliva Forestal', hex: '#3f4f44' },
