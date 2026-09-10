@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 # 🌐 ShopGlid - Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
@@ -8,9 +15,9 @@
 > **Digital Boutique and Curated Catalog of Handcrafted Leather Goods.**  
 > An e-commerce platform crafted with care for curating, discovering, and acquiring exclusive leather pieces from *ShopGlid*: elegant handbags, ergonomic urban backpacks, and ultra-slim genuine leather wallets. The system blends a sober, accessible, and minimalist visual experience with detailed material specification sheets, an interactive leather tone selector, and a seamless, transparent checkout flow.
 
-🌍 **[View Live Platform (Production) 🟢]** [insert link here]
+🌍 **View Live Platform (Production) 🟢** https://shop-glid.vercel.app/
 
-![ShopGlid Boutique Preview]([insert link here])
+<img width="1920" height="1330" alt="screencapture-shop-glid-vercel-app-2026-09-10-15_02_57" src="https://github.com/user-attachments/assets/d91d56cf-58a5-45e6-b337-4f1d693e4959" />
 
 ---
 
@@ -19,7 +26,7 @@
 **🎬 Collection Browsing and Shopping Experience**  
 Store interface demonstration: smooth navigation through leather goods categories (handbags, backpacks, and wallets), instant search filtering and price range adjustments, detailed inspection of artisanal craftsmanship specifications, interactive color selection, and reactive shopping cart management with automatic free shipping calculations.
 
-[insert link here]
+https://github.com/user-attachments/assets/63aee1e8-8dfb-4d49-bbf8-7699efe3e6eb
 
 ---
 
