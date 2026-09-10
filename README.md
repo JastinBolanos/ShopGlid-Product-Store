@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 # 🌐 ShopGlid - Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
