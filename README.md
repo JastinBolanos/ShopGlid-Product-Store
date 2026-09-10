@@ -1,112 +1,112 @@
-# 🌐 ShopGlid - Marroquinería de Autor & Atelier Digital de Piel (v1.0.0-PROD)
+# 🌐 ShopGlid - Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Deployment](https://img.shields.io/badge/deployment-production-blue)
 ![Version](https://img.shields.io/badge/version-1.0.0--PROD-orange)
 ![Security](https://img.shields.io/badge/security-TLS_1.3-success)
 
-> **Boutique Digital y Catálogo de Marroquinería Artesanal.**  
-> Plataforma de comercio electrónico concebida con esmero para la curaduría, descubrimiento y adquisición de piezas exclusivas de marroquinería de *ShopGlid*: carteras elegantes, morrales urbanos ergonómicos y billeteras de perfil ultradelgado en piel legítima. El sistema combina una experiencia visual sobria, accesible y minimalista con fichas técnicas detalladas de materiales, selector interactivo de tonalidades de piel y un flujo de compra fluido y transparente.
+> **Digital Boutique and Curated Catalog of Handcrafted Leather Goods.**  
+> An e-commerce platform crafted with care for curating, discovering, and acquiring exclusive leather pieces from *ShopGlid*: elegant handbags, ergonomic urban backpacks, and ultra-slim genuine leather wallets. The system blends a sober, accessible, and minimalist visual experience with detailed material specification sheets, an interactive leather tone selector, and a seamless, transparent checkout flow.
 
-🌍 **[Ver Plataforma en Vivo (Producción) 🟢]** [aca va el link]
+🌍 **[View Live Platform (Production) 🟢]** [insert link here]
 
-![Vista Previa de ShopGlid Boutique]([aca va el link])
-
----
-
-## 🎥 Demostración de la Experiencia en Tiempo Real
-
-**🎬 Exploración de Colecciones y Experiencia de Compra**  
-Demostración de la interfaz de la tienda: navegación fluida por categorías de marroquinería (carteras, morrales y billeteras), filtrado instantáneo por texto y rango de precio, inspección detallada de especificaciones de confección artesanal, selección interactiva de colores y gestión reactiva de la bolsa de compra con cálculo automático de envío gratuito.
-
-[aca va el link]
+![ShopGlid Boutique Preview]([insert link here])
 
 ---
 
-## 🏗️ Arquitectura de Sistema y Stack Tecnológico
+## 🎥 Real-Time Experience Demo
 
-Desarrollada con un enfoque honesto, limpio y profesional hacia la ingeniería de software moderna, esta plataforma fue edificada desde cero priorizando la rapidez en la respuesta visual, la claridad en la navegación para el usuario y la fiabilidad de cada interacción. Nos aseguramos de mantener una separación estricta entre la capa de presentación visual, el catálogo de productos y el estado global de la sesión de compra.
+**🎬 Collection Browsing and Shopping Experience**  
+Store interface demonstration: smooth navigation through leather goods categories (handbags, backpacks, and wallets), instant search filtering and price range adjustments, detailed inspection of artisanal craftsmanship specifications, interactive color selection, and reactive shopping cart management with automatic free shipping calculations.
 
-- **Core & Runtime (Optimizado para la Web Moderna):**
-  - `react` (`^19.0.1`) & `react-dom` para una interfaz de usuario reactiva, fluida y con renders optimizados.
-  - `typescript` (`~5.8.2`) con tipado estricto para modelos de productos, atributos de piel, variantes de color y transacciones del carrito.
-  - `vite` (`^6.2.3`) como empaquetador ultrarrápido con arranque casi instantáneo y compilación de producción optimizada.
-  - `react-router-dom` (`^7.18.3`) para un enrutamiento declarativo del lado del cliente sin parpadeos ni recargas de página.
-
-- **Interfaz de Usuario (UI) & Estilizado:**
-  - `tailwindcss` (`^4.1.14`) utilizando un diseño contemporáneo basado en paletas neutras de tonos piedra y carbón, contrastes confortables y espaciados armónicos.
-  - `lucide-react` (`^0.546.0`) para iconografía funcional, consistente y de trazos finos.
-  - `motion` (`^12.23.24`) para animaciones sutiles y respetuosas en transiciones de navegación, apertura del cajón lateral y retroalimentación de botones de compra.
-
-- **Estado Global & Persistencia:**
-  - `CartContext` con API nativa de Context de React y sincronización automática bidireccional en `localStorage`, garantizando que la cesta de compra del cliente perdure de forma confiable entre sesiones o ante cualquier recarga accidental de la ventana.
-
-- **Servicio y Rendimiento de Medios:**
-  - Optimización local de fotografías de producto con compresión adaptada para minimizar la huella de ancho de banda y garantizar tiempos de carga inmediatos.
+[insert link here]
 
 ---
 
-## 🚀 Módulos Operativos (Desplegados)
+## 🏗️ System Architecture & Technology Stack
 
-1. **👜 Catálogo Curado & Explorador Multicategoría (`HomePage` / `ProductGridCard`)**
-   - Filtrado dinámico instantáneo por las tres categorías cardinales: **Carteras**, **Morrales** y **Billeteras**.
-   - Búsqueda en tiempo real por palabras clave, acabados de piel, estilo y denominación de producto.
-   - Ordenamiento flexible por precio ascendente/descendente y relevancia alfabética.
-   - Indicadores visuales de paleta de colores disponibles y etiquetas destacadas (*Favorito*, *Nuevo*, *Popular*).
+Built with an honest, clean, and professional approach to modern software engineering, this platform was developed from the ground up prioritizing rapid visual response, effortless user navigation, and high interaction reliability. We maintained a strict separation between the visual presentation layer, the product catalog, and global shopping session state.
 
-2. **🔍 Ficha de Detalle de Producto & Especificaciones de Confección (`ProductDetailPage`)**
-   - Exhibición fotográfica nítida con tratamiento de imagen centrado en texturas y detalles de los materiales.
-   - Selector interactivo de colores de cuero (Borgoña, Negro Carbón, Camel Claro, etc.) con selección activa.
-   - Lista detallada de características técnicas: tipo de curtido, dimensiones milimétricas, capacidad en litros y compartimentos de seguridad (cierres ocultos y protección RFID).
-   - Módulo de recomendaciones automáticas con productos complementarios de la misma colección.
+- **Core & Runtime (Optimized for the Modern Web):**
+  - `react` (`^19.0.1`) & `react-dom` for a reactive, smooth user interface with optimized rendering.
+  - `typescript` (`~5.8.2`) with strict typing for product models, leather attributes, color variants, and cart transactions.
+  - `vite` (`^6.2.3`) as an ultra-fast bundler with near-instant boot and optimized production builds.
+  - `react-router-dom` (`^7.18.3`) for client-side declarative routing without flickers or page reloads.
 
-3. **🛍️ Bolsa de Compras & Gestor de Orden (`CartPage` / `CartContext`)**
-   - Control cuantitativo reactivo: adición, sustracción y remoción de artículos en un solo clic.
-   - Indicador visual del umbral de envío gratuito (pedidos superiores a 50 €).
-   - Motor de cupones de descuento interactivo (con soporte para códigos promocionales como `BIENVENIDA10`).
-   - Resumen financiero claro y transparente desglosando subtotal, impuestos y descuento aplicado.
-   - Formulario de finalización de compra con validación de datos de entrega y pantalla de confirmación de pedido.
+- **UI & Styling:**
+  - `tailwindcss` (`^4.1.14`) utilizing a contemporary design based on neutral stone and charcoal palettes, comfortable contrast, and harmonic spacing.
+  - `lucide-react` (`^0.546.0`) for clean, functional, consistent iconography.
+  - `motion` (`^12.23.24`) for subtle, refined animations across page transitions, sidebar drawer toggles, and cart button feedback.
 
-4. **👤 Centro de Perfil & Preferencias del Cliente (`ProfilePage` / `ProfileSubSectionPage`)**
-   - Panel de consulta de pedidos anteriores con fechas y estado de entrega.
-   - Gestión de libretas de direcciones guardadas para envíos recurrentes.
-   - Configuración de métodos de pago preferidos y opciones de privacidad de cuenta.
+- **Global State & Persistence:**
+  - `CartContext` utilizing native React Context API and bidirectional automatic synchronization with `localStorage`, ensuring the customer's cart reliably persists across sessions and accidental reloads.
 
-5. **📱 Navegación Responsiva & Menú Deslizante (`Header` / `SidebarDrawer`)**
-   - Barra superior minimalista con insignia de contador de carrito en tiempo real.
-   - Cajón lateral optimizado para dispositivos móviles y pantallas táctiles con enlaces directos a categorías y perfil.
+- **Media Optimization & Performance:**
+  - Local product photography optimization with tailored compression to minimize bandwidth footprint and guarantee instant load times.
 
 ---
 
-## 💻 Guía de Despliegue y Ejecución (Entorno Local)
+## 🚀 Operational Modules (Deployed)
 
-Para cualquier desarrollador, diseñador o colaborador que desee auditar, revisar o poner en marcha el proyecto en su máquina local:
+1. **👜 Curated Catalog & Multi-Category Explorer (`HomePage` / `ProductGridCard`)**
+   - Instant dynamic filtering across three primary categories: **Handbags**, **Backpacks**, and **Wallets**.
+   - Real-time search by keywords, leather finishes, style, and product name.
+   - Flexible sorting by price (ascending/descending) and alphabetical relevance.
+   - Visual color palette indicators and featured badges (*Favorite*, *New*, *Popular*).
 
-### 1. Clonar el repositorio y preparar entorno
+2. **🔍 Product Detail View & Craftsmanship Specifications (`ProductDetailPage`)**
+   - High-definition photography focused on textures and material craftsmanship details.
+   - Interactive leather colorway selector (Burgundy, Charcoal Black, Light Camel, etc.) with active state tracking.
+   - Detailed technical specification sheet: tanning process, millimeter dimensions, volume capacity in liters, and security features (hidden zippers and RFID protection).
+   - Automated recommendations module highlighting complementary pieces from the same collection.
+
+3. **🛍️ Shopping Bag & Order Manager (`CartPage` / `CartContext`)**
+   - Reactive quantity controls: add, subtract, and remove items with a single click.
+   - Visual free-shipping progress tracker (orders over €50).
+   - Interactive coupon engine (supporting promo codes such as `BIENVENIDA10`).
+   - Transparent financial summary detailing subtotal, taxes, and applied discount.
+   - Checkout flow with shipping address validation and order confirmation screen.
+
+4. **👤 Customer Profile & Account Preferences (`ProfilePage` / `ProfileSubSectionPage`)**
+   - Order history panel displaying previous purchases with dates and fulfillment status.
+   - Saved address book management for recurring deliveries.
+   - Preferred payment methods and account privacy settings.
+
+5. **📱 Responsive Navigation & Drawer Menu (`Header` / `SidebarDrawer`)**
+   - Minimalist top navigation bar with real-time cart badge counter.
+   - Slide-out drawer menu optimized for mobile devices and touchscreens with quick links to categories and profile.
+
+---
+
+## 💻 Deployment & Execution Guide (Local Environment)
+
+For any developer, designer, or contributor looking to audit, review, or run the project locally:
+
+### 1. Clone the repository and setup the environment
 ```bash
-git clone [aca va el link]
+git clone [insert link here]
 cd shopglid
 ```
 
-### 2. Instalación de dependencias (Node.js v18+)
+### 2. Dependency Installation (Node.js v18+)
 ```bash
 npm install
 ```
 
-### 3. Configuración de Entorno (Environment)
-Clona el archivo de configuración base para configurar cualquier variable de entorno requerida por la aplicación:
+### 3. Environment Configuration
+Copy the template configuration file to configure any required environment variables:
 ```bash
 cp .env.example .env
 ```
 
-### 4. Iniciar el servidor local de desarrollo
+### 4. Start the local development server
 ```bash
 npm run dev
 ```
-La terminal indicará la dirección local habilitada (por defecto `http://localhost:3000`).
+The terminal will display the active local URL (default: `http://localhost:3000`).
 
-### 5. Compilación y Verificación para Producción (CI/CD Pipeline)
-Para comprobar el tipado con TypeScript y generar el paquete estático ultraoptimizado listo para el CDN o servidor:
+### 5. Production Build & Verification (CI/CD Pipeline)
+Check TypeScript typing and generate the production bundle:
 ```bash
 npm run lint
 npm run build
@@ -114,5 +114,5 @@ npm run build
 
 ---
 
-*Proyecto desarrollado con dedicación artesanal, buenas prácticas de desarrollo web y respeto por el usuario.*  
-**ShopGlid Atelier © 2026. Todos los derechos reservados.**
+*Project crafted with artisanal dedication, web development best practices, and respect for the user.*  
+**ShopGlid Atelier © 2026. All rights reserved.**
