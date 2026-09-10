@@ -10,6 +10,7 @@ import {
   Route,
   Navigate,
   Outlet,
+  Link,
 } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { Header } from './components/Header';
@@ -48,7 +49,16 @@ function AppLayout() {
 
       {/* Subtle Minimalist Footer with Hierarchical Site Info */}
       <footer className="border-t border-stone-200/80 py-6 text-center text-xs text-stone-500">
-        <p>ShopGlid · Diseño esencial sin artificios</p>
+        <p>
+          <Link
+            to="/welcome"
+            className="hover:text-stone-900 font-medium transition-colors"
+            title="Ir a Bienvenida"
+          >
+            ShopGlid
+          </Link>{' '}
+          · Diseño esencial sin artificios
+        </p>
       </footer>
     </div>
   );

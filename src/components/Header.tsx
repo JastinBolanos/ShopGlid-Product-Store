@@ -48,9 +48,9 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           <Link
-            to="/home"
+            to="/welcome"
             className="flex items-center gap-2 pl-1 sm:pl-2 border-l border-stone-300 hover:opacity-85 transition-opacity"
-            title="Ir a Inicio"
+            title="Ir a Bienvenida"
           >
             <span className="text-xs sm:text-sm uppercase tracking-[0.25em] font-bold text-stone-900">
               ShopGlid

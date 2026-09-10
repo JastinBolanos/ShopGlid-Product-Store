@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import {
   X,
@@ -102,7 +102,14 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
             <div className="p-6 border-b border-stone-200/80">
               <div className="flex items-center justify-between">
                 {/* Logo and Brand Name inside the Drawer */}
-                <BrandLogo size="md" />
+                <Link
+                  to="/welcome"
+                  onClick={onClose}
+                  className="hover:opacity-85 transition-opacity"
+                  title="Ir a Bienvenida"
+                >
+                  <BrandLogo size="md" />
+                </Link>
 
                 <button
                   id="btn-close-drawer"
