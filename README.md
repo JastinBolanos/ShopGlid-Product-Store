@@ -19,7 +19,7 @@
 **🎬 Collection Browsing and Shopping Experience**  
 Store interface demonstration: smooth navigation through leather goods categories (handbags, backpacks, and wallets), instant search filtering and price range adjustments, detailed inspection of artisanal craftsmanship specifications, interactive color selection, and reactive shopping cart management with automatic free shipping calculations.
 
-https://github.com/user-attachments/assets/63aee1e8-8dfb-4d49-bbf8-7699efe3e6eb
+https://github.com/user-attachments/assets/3d44234b-b3d8-45f5-a9dc-1f1b7955c1c7
 
 ---
 
