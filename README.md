@@ -1,19 +1,29 @@
-<img width="1022" height="247" alt="Captura de pantalla 2026-09-16 123114" src="https://github.com/user-attachments/assets/47f86317-da3d-4fc5-836a-ab5b575382eb" />
-# 🌐 ShopGlid - Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)
+<div align="center">
+  <img alt="ShopGlid Banner" src="https://github.com/user-attachments/assets/47f86317-da3d-4fc5-836a-ab5b575382eb" width="100%" />
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![Deployment](https://img.shields.io/badge/deployment-production-blue)
-![Version](https://img.shields.io/badge/version-1.0.0--PROD-orange)
-![Security](https://img.shields.io/badge/security-TLS_1.3-success)
+  <h1>🌐ShopGlid</h1>
+  <h3>Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status" />
+    <img src="https://img.shields.io/badge/deployment-production-blue" alt="Deployment" />
+    <img src="https://img.shields.io/badge/version-1.0.0--PROD-orange" alt="Version" />
+    <img src="https://img.shields.io/badge/security-TLS_1.3-success" alt="Security" />
+  </p>
+</div>
+
+<br>
 
 > **Digital Boutique and Curated Catalog of Handcrafted Leather Goods.**  
 > An e-commerce platform crafted with care for curating, discovering, and acquiring exclusive leather pieces from *ShopGlid*: elegant handbags, ergonomic urban backpacks, and ultra-slim genuine leather wallets. The system blends a sober, accessible, and minimalist visual experience with detailed material specification sheets, an interactive leather tone selector, and a seamless, transparent checkout flow.
 
-🌍 **View Live Platform (Production) 🟢** https://shop-glid.vercel.app/
+<br>
 
-<img width="1920" height="1330" alt="screencapture-shop-glid-vercel-app-2026-09-10-15_02_57" src="https://github.com/user-attachments/assets/d91d56cf-58a5-45e6-b337-4f1d693e4959" />
-
----
+<div align="center">
+  <h3>🌍 <b><a href="https://shop-glid.vercel.app/">View Live Platform (Production) 🟢</a></b></h3>
+  <br>
+  <img alt="ShopGlid Preview" src="https://github.com/user-attachments/assets/d91d56cf-58a5-45e6-b337-4f1d693e4959" width="100%" />
+</div>
 
 ## 🎥 Real-Time Experience Demo
 
