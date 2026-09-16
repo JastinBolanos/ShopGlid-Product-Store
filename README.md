@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="ShopGlid Banner" src="https://github.com/user-attachments/assets/47f86317-da3d-4fc5-836a-ab5b575382eb" width="100%" />
+  <img alt="ShopGlid Banner" src="https://github.com/user-attachments/assets/47f86317-da3d-4fc5-836a-ab5b575382eb" width="40%" />
 
   <h1>🌐ShopGlid</h1>
   <h3>Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)</h3>
@@ -22,7 +22,7 @@
 <div align="center">
   <h3>🌍 <b><a href="https://shop-glid.vercel.app/">View Live Platform (Production) 🟢</a></b></h3>
   <br>
-  <img alt="ShopGlid Preview" src="https://github.com/user-attachments/assets/d91d56cf-58a5-45e6-b337-4f1d693e4959" width="100%" />
+  <img alt="ShopGlid Preview" src="https://github.com/user-attachments/assets/d91d56cf-58a5-45e6-b337-4f1d693e4959" width="80%" />
 </div>
 
 ## 🎥 Real-Time Experience Demo
