@@ -1,6 +1,6 @@
 <div align="center">
   <img alt="ShopGlid Banner" src="https://github.com/user-attachments/assets/47f86317-da3d-4fc5-836a-ab5b575382eb" width="70%" />
----
+
   <h3>Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)</h3>
 
   <p>
