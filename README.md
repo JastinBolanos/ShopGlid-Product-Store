@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="ShopGlid Banner" src="https://github.com/user-attachments/assets/47f86317-da3d-4fc5-836a-ab5b575382eb" width="70%" />
+  <img alt="ShopGlid Banner" src="https://github.com/user-attachments/assets/47f86317-da3d-4fc5-836a-ab5b575382eb" width="50%" />
 
   <h3>Artisan Leather Goods & Digital Leather Atelier (v1.0.0-PROD)</h3>
 
@@ -13,8 +13,8 @@
 
 <br>
 
-> **Digital Boutique and Curated Catalog of Handcrafted Leather Goods.**  
-> An e-commerce platform crafted with care for curating, discovering, and acquiring exclusive leather pieces from *ShopGlid*: elegant handbags, ergonomic urban backpacks, and ultra-slim genuine leather wallets. The system blends a sober, accessible, and minimalist visual experience with detailed material specification sheets, an interactive leather tone selector, and a seamless, transparent checkout flow.
+> **Frontend E-Commerce Storefront & Artisan Goods Showcase.**  
+> A client-side web application designed to present handcrafted leather goods through a clean, modern digital boutique. The interface combines accessible layouts and structured material specification sheets with interactive colorway selectors and a client-side shopping cart workflow.
 
 <br>
 
@@ -27,7 +27,7 @@
 ## 🎥 Real-Time Experience Demo
 
 **🎬 Collection Browsing and Shopping Experience**  
-Store interface demonstration: smooth navigation through leather goods categories (handbags, backpacks, and wallets), instant search filtering and price range adjustments, detailed inspection of artisanal craftsmanship specifications, interactive color selection, and reactive shopping cart management with automatic free shipping calculations.
+Frontend interface demonstration: browsing categories (handbags, backpacks, and wallets), search filtering and price adjustments, inspecting product material details, interactive colorway selection, and client-side shopping cart management with automatic shipping calculations.
 
 https://github.com/user-attachments/assets/3d44234b-b3d8-45f5-a9dc-1f1b7955c1c7
 
@@ -35,56 +35,56 @@ https://github.com/user-attachments/assets/3d44234b-b3d8-45f5-a9dc-1f1b7955c1c7
 
 ## 🏗️ System Architecture & Technology Stack
 
-Built with an honest, clean, and professional approach to modern software engineering, this platform was developed from the ground up prioritizing rapid visual response, effortless user navigation, and high interaction reliability. We maintained a strict separation between the visual presentation layer, the product catalog, and global shopping session state.
+This repository focuses on the client-side frontend architecture of the e-commerce boutique. The codebase separates UI presentation components, catalog schemas, and shopping cart state to maintain clarity and ease of maintenance.
 
-- **Core & Runtime (Optimized for the Modern Web):**
-  - `react` (`^19.0.1`) & `react-dom` for a reactive, smooth user interface with optimized rendering.
-  - `typescript` (`~5.8.2`) with strict typing for product models, leather attributes, color variants, and cart transactions.
-  - `vite` (`^6.2.3`) as an ultra-fast bundler with near-instant boot and optimized production builds.
-  - `react-router-dom` (`^7.18.3`) for client-side declarative routing without flickers or page reloads.
+- **Core & Runtime (Frontend Client):**
+  - `react` (`^19.0.1`) & `react-dom` for declarative component rendering and responsive state updates.
+  - `typescript` (`~5.8.2`) providing static typing across catalog items, product attributes, color variants, and cart actions.
+  - `vite` (`^6.2.3`) for rapid development and optimized client bundle compilation.
+  - `react-router-dom` (`^7.18.3`) for client-side single-page navigation without full page reloads.
 
 - **UI & Styling:**
-  - `tailwindcss` (`^4.1.14`) utilizing a contemporary design based on neutral stone and charcoal palettes, comfortable contrast, and harmonic spacing.
-  - `lucide-react` (`^0.546.0`) for clean, functional, consistent iconography.
-  - `motion` (`^12.23.24`) for subtle, refined animations across page transitions, sidebar drawer toggles, and cart button feedback.
+  - `tailwindcss` (`^4.1.14`) configured with neutral stone, charcoal, and warm leather tones with consistent layout spacing.
+  - `lucide-react` (`^0.546.0`) for clean and standardized vector iconography.
+  - `motion` (`^12.23.24`) for subtle page transitions, drawer animations, and button feedback.
 
 - **Global State & Persistence:**
-  - `CartContext` utilizing native React Context API and bidirectional automatic synchronization with `localStorage`, ensuring the customer's cart reliably persists across sessions and accidental reloads.
+  - `CartContext` utilizing React Context and bidirectional synchronization with `localStorage` to keep cart data consistent across user visits.
 
 - **Media Optimization & Performance:**
-  - Local product photography optimization with tailored compression to minimize bandwidth footprint and guarantee instant load times.
+  - Optimized image assets structured for efficient loading and smooth rendering across viewports.
 
 ---
 
 ## 🚀 Operational Modules (Deployed)
 
 1. **👜 Curated Catalog & Multi-Category Explorer (`HomePage` / `ProductGridCard`)**
-   - Instant dynamic filtering across three primary categories: **Handbags**, **Backpacks**, and **Wallets**.
-   - Real-time search by keywords, leather finishes, style, and product name.
-   - Flexible sorting by price (ascending/descending) and alphabetical relevance.
-   - Visual color palette indicators and featured badges (*Favorite*, *New*, *Popular*).
+   - Client-side category filtering across three collections: **Handbags**, **Backpacks**, and **Wallets**.
+   - Keyword search by product name, finish, and style attributes.
+   - Sorting options by price (ascending/descending) and name.
+   - Visual color palette indicators and highlight badges (*Favorite*, *New*, *Popular*).
 
 2. **🔍 Product Detail View & Craftsmanship Specifications (`ProductDetailPage`)**
-   - High-definition photography focused on textures and material craftsmanship details.
-   - Interactive leather colorway selector (Burgundy, Charcoal Black, Light Camel, etc.) with active state tracking.
-   - Detailed technical specification sheet: tanning process, millimeter dimensions, volume capacity in liters, and security features (hidden zippers and RFID protection).
-   - Automated recommendations module highlighting complementary pieces from the same collection.
+   - High-resolution gallery displaying material textures and stitching details.
+   - Interactive colorway switcher (Burgundy, Charcoal Black, Light Camel, etc.) with active state feedback.
+   - Technical specifications breakdown: tanning style, dimensions, volume capacity, and closure details.
+   - Recommendations module suggesting complementary pieces from related product lines.
 
 3. **🛍️ Shopping Bag & Order Manager (`CartPage` / `CartContext`)**
-   - Reactive quantity controls: add, subtract, and remove items with a single click.
-   - Visual free-shipping progress tracker (orders over €50).
-   - Interactive coupon engine (supporting promo codes such as `BIENVENIDA10`).
-   - Transparent financial summary detailing subtotal, taxes, and applied discount.
-   - Checkout flow with shipping address validation and order confirmation screen.
+   - Responsive quantity controls to increment, decrement, or remove items.
+   - Progress bar indicator for free shipping thresholds (orders over €50).
+   - Coupon code input supporting promotional discounts (such as `BIENVENIDA10`).
+   - Order cost breakdown displaying subtotal, estimated taxes, and applied savings.
+   - Client-side checkout step with delivery address validation and order confirmation summary.
 
 4. **👤 Customer Profile & Account Preferences (`ProfilePage` / `ProfileSubSectionPage`)**
-   - Order history panel displaying previous purchases with dates and fulfillment status.
-   - Saved address book management for recurring deliveries.
-   - Preferred payment methods and account privacy settings.
+   - Mock order history view displaying past orders and delivery progress.
+   - Saved address manager for delivery preferences.
+   - Saved payment options and interface preferences.
 
 5. **📱 Responsive Navigation & Drawer Menu (`Header` / `SidebarDrawer`)**
-   - Minimalist top navigation bar with real-time cart badge counter.
-   - Slide-out drawer menu optimized for mobile devices and touchscreens with quick links to categories and profile.
+   - Top navigation bar featuring a dynamic shopping cart item counter.
+   - Slide-over mobile drawer menu with straightforward links to categories and account preferences.
 
 ---
 
@@ -124,5 +124,4 @@ npm run build
 
 ---
 
-*Project crafted with artisanal dedication, web development best practices, and respect for the user.*  
-**ShopGlid Atelier © 2026. All rights reserved.**
+*ShopGlid Atelier © 2026. Technical Demonstration Project.*
